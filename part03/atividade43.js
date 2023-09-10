@@ -27,27 +27,18 @@ for (let j = 0; j < limite; j++) {
        }
     }
 //console.log(comparador)
-if(comparador==limite-1){
-    /*a cada numero que corresponde a comparação de n[j]>n[i] 
-    add 1 a comparador logo o maior numero tera o valor agregado do comparador equivalente 
-    a todos os numeros a serem comparados -1 pois n[j] não é comparado com ele mesmo e 
-    mesmo que fosse não seria maior 
-    */
+if(comparador==limite-1){//maior numero 
     console.log(`${numeros[j]} é o maior numero de todos`)
     }
-    comparador=0
-    //colocando o valor de 0 ao comparador para não ficar com valor agregado em comparações de numeros diferentes 
+        /*a cada numero que corresponde a comparação de n[j]>n[i] 
+        add 1 a comparador logo o maior numero tera o valor agregado do comparador equivalente 
+        a todos os numeros a serem comparados -1 pois n[j] não é comparado com ele mesmo , logo 
+        para ser o menor valor  o comparador terá de ter um valor de 0 significa que não é maior
+        que nenhum dos numeros listados
+        */
+if(comparador==0){//menor numero
+        console.log(`${numeros[j]} é o menor numero de todos`)
+        }
+comparador=0 //colocando o valor de 0 ao comparador para não ficar com valor agregado em comparações de numeros diferentes
+     
 }
-// menor numero(funciona = ao código acima)
-for (let j = 0; j < limite; j++) {
-
-    for (let i = 0; i < limite; i++) {
-       if( numeros[j] < numeros[i] ){comparador++
-       }
-    }
-if(comparador==limite-1){
-    console.log(`${numeros[j]} é o menor numero de todos`)
-    }
-    comparador=0
-}
-
