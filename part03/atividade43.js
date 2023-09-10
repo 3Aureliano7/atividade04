@@ -50,3 +50,4 @@ if(comparador==limite-1){
     }
     comparador=0
 }
+
